@@ -172,13 +172,20 @@
 #slide(title: "Add a Secret")[
 - Run `agenix -e <secret>.age`
 - Add which users and systems can access the secret
+#align(center, image("assets/agenix-toml.png", height: 45%))
 - Use the reference in the Nix configuration
+]
+
+#slide(title: "Reflection: Scaling Secrets Management")[
+- AgeNix over SSH Key Management
+  - Declarative & version-controlled
+  - Automatic integration with nixos
+  - Simplified process & enhanced security
 ]
 
 #new-section-slide("Conclusion")
 
-#big-picture-slide(
-  )[
+#big-picture-slide()[
   With NixOS, you can declare your infrastructure once and deploy it forever
   #notes(speaker: "Diogo", "Declare once, deploy forever, wherever")
 ]
